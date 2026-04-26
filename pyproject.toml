@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gemini-flux"
+version = "1.1.1"
+description = "Smart Gemini API key manager with token-aware sliding window scheduling"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [
+    {name = "Muhammad Ali", email = "malikasana2810@gmail.com"}
+]
+keywords = ["gemini", "api", "rate-limit", "key-rotation", "google-ai"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+requires-python = ">=3.9"
+dependencies = [
+    "google-genai>=0.8.0",
+    "fastapi>=0.115.0",
+    "uvicorn>=0.30.0",
+    "pydantic>=2.0.0",
+    "pytz>=2024.1",
+    "requests>=2.31.0",
+    "python-dotenv>=1.0.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/malikasana/gemini-flux"
+Repository = "https://github.com/malikasana/gemini-flux"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["gemini_flux*"]

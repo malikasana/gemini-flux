@@ -1,0 +1,22 @@
+# Environment & secrets
+.env
+*.env
+
+# Policy cache
+.gemini_flux_policy_cache.json
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+
+# Virtual env
+.venv/
+venv/
+
+# IDE
+.idea/
+.vscode/
